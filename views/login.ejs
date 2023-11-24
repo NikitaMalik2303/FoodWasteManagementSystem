@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Login or Sign Up</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css\com.css"> 
+    <link rel="icon" type="image/x-icon" href="./images/logo.svg">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: skyblue;
+        }
+
+        h1 {
+            color: #333;
+        }
+        .heading {
+            text-align: center;
+        }
+
+    
+        .login-container{
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 20px;
+             margin-left: 60vh;
+             margin-right: 60vh;
+             margin-top: 20vh;
+             border-color: black;
+             border-width: 10px;
+        }
+        .box>h1{
+            
+            border-radius: 20px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        label {
+            color: #555;
+            display: block;
+            margin-top: 10px;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .line{
+            padding-top: 20px;
+            padding-bottom: 30px;
+        }
+
+        a.button {
+            background-color: #555;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container box">
+        <h1 >Welcome!</h1>
+        <form action="/get_manager_id" method="post">
+            <div class="heading pt-10"> 
+                <h2>Login or Sign Up</h2>
+            </div>
+
+            <div class="pt-10">
+                <input type="text" name="username" id="username" placeholder="Manager ID" required>
+                <br>
+            </div>
+   
+            <div class="pt-10">
+                <input type="password" name="password" id="password" placeholder="Password" required>
+                <br>
+            </div>
+
+            <div class="line">
+                <button type="submit" class="button">Login</button>
+                <a href="/signup" class="button">Sign Up</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

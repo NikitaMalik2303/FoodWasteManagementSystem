@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    
+        <link rel="stylesheet" href="./css/com.css"> 
+
+    <link rel="icon" type="image/x-icon" href="./images/logo.svg">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: skyblue;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .signup-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 20px;
+             margin-left: 60vh;
+             margin-right: 60vh;
+             margin-top: 20vh;
+             border-color: black;
+             border-width: 10px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        form label {
+            color: #555;
+            display: block;
+            margin-top: 10px;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        p {
+            color: #555;
+            margin-top: 10px;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="signup-container">
+        <h1>Create an Account</h1>
+        <h2>Sign Up</h2>
+        <form action="" method="post">
+            <!-- <label for="username">Username:</label> -->
+            
+
+            <input  type="text" name="username" id="username" placeholder="Username" required>
+
+            <input type="email" name="email" id="email" placeholder="Email" required>
+
+            <input type="password" name="password" id="password" placeholder="Password" required>
+
+            <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password" required>
+
+            <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="/login">Log in</a></p>
+    </div>
+</body>
+</html>

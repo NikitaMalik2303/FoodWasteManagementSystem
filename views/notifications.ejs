@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  <meta charset="utf-8">
+  <title>NoFoodWaste</title>
+  <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+  crossorigin="anonymous">
+  
+
+
+  <!-- font awesome -->
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <!-- google fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- css stylesheet -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="css\styles.css"> -->
+
+  <!-- javascript -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+  <link rel="icon" type="image/x-icon" href="../images/logo.svg">
+    <link rel="stylesheet" href="../css/com.css"> 
+
+</head>
+
+
+<body style="  text-align:left ;">
+  <section id="title">
+     <div class="container-fluid">
+       <!-- navbar -->
+     <nav  class="navbar navbar-expand-lg ">
+        <a href="/index" class="navbar-brand logo"><img src="../images/NOWASTE.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="/store" class="nav-link active">Stores</a>
+            </li>
+            <li class="nav-item">
+              <a href="/stats" class="nav-link active">Stats</a>
+            </li>
+            <li class="nav-item">
+              <a href="/notifications" class="nav-link active" style="  color: black;
+              border-radius: 20px;
+              background-color:white;  ">Notifications</a>
+            </li>
+            <li class="nav-item">
+              <a href="/Profile" class="nav-link  active">Profile</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+     </div>
+  </section>
+
+
+  <section class="section-50" style="background-color: rgb(190, 237, 255);">
+    <div class="container">
+      <h3 class="m-b-50 heading-line">Notifications <i class="fa fa-bell text-muted"></i></h3>
+  
+      <div class="notification-ui_dd-content">
+        <% notifications.forEach(notification => { %>
+          <div class="notification-list notification-list--unread">
+            <div class="notification-list_content">
+              <div class="notification-list_detail">
+                <p><b>Item ID:</b> <%= notification.item_id %></p>
+                <p><b>Notification Type:</b> <%= notification.notification_id %></p>
+                <p class="text-muted"><b>Message:</b> <%= notification.message %></p>
+                <p><b>Created At:</b> <%= notification.created_at %></p>
+              </div>
+            </div>
+          </div>
+        <% }); %>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" 
+  crossorigin="anonymous"></script>
+
+</body>
+
+</html>
